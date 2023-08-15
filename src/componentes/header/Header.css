@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+header{
+    font-family: 'Preahvihear', sans-serif;
+    background-color:rgb(247, 148, 198);
+    display: flex;
+    justify-content: space-between;
+    padding:1px 5vw;
+    align-items: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    border: 4px solid hotpink;
+    border-radius: 20px;
+    color: white;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.logo{
+    background: url("/img/barbie.png");
+    height: 150px;
+    width: 400px;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
