@@ -17,6 +17,11 @@ header nav ul li a{
     color: white;
 }
 
+a:hover{
+    cursor: pointer;
+    background-color: rgb(250, 83, 166);
+}
+
 header nav ul{
     display: flex;
     list-style: none;
@@ -26,7 +31,6 @@ header nav ul{
 .logo{
     background: url("/img/barbie.png");
     height: 150px;
-    width: 400px;
-    background-size: 40%;
+    width: 200px;
     background-repeat: no-repeat;
 }

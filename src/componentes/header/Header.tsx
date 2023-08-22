@@ -1,9 +1,9 @@
 import './Header.css'
-
+import Logo from "../../assets/barbie.png"
 function Header(){
     return(
         <header>
-            <div className="logo"></div>
+            <img className="logo"src={Logo} alt="" />
             <nav>
                 <ul>
                     <li>
