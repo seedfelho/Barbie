@@ -5,8 +5,22 @@
     column-gap: 30px;
     row-gap: 30px;
     justify-content: center;
-    
     /* gap: 30px;
     flex-wrap: wrap;
-    justify-content: center; */
+    justify-content: center;  */
+}
+.barrapesquisa{
+    height: 30px;
+    border: 1px solid #000;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.pesquisa{
+    padding: 50px;
+}
+
+.barrapesquisa:focus-visible{
+    outline: 1px solid rgba(28, 28, 191, 0.57);
 }
