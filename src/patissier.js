@@ -143,7 +143,7 @@ db.cake.insertMany([
             },
             {
                 nome:"Ovo",
-                quantidade:"3"
+                quantidade:"1"
             },
             {
                 nome:"oleo",
@@ -166,4 +166,38 @@ db.cake.insertMany([
 ]);
 
 use("db_patissier");
-db.cake.find({_id:ObjectId("1111111111")});
+db.cake.find({_id:ObjectId("333333333333")});
+
+//questao 3
+use("db_patissier");
+db.cake.deleteOne({_id:ObjectId("111111111111")});
+//questao 4
+use("db_patissier");
+db.cake.find({},{nome:true, preco:true});
+//questao 5
+use("db_patissier");
+db.cake.find({preco: {$lte:100.00}}, {nome:true, preco:true});
+//questao 6
+use("db_patissier");
+db.cake.updateOne(
+    {_id:ObjectId("222222222222")},
+    {
+        $set:{
+            nome:"Torta de Morango",
+            peso:"3,5kg"
+        },
+        $push:{
+            ingredientes:{nome:"chantilli", quantidade:"400ml"}
+        }
+    }
+);
+//questao 7
+use("db_patissier");
+db.cake.updateOne({_id:ObjectId("333333333333"), "ingredientes.nome":"Ovo"},
+    {
+        $set:{
+            "ingredientes.$.nome":"Ovos", 
+            "ingredientes.$.quantidade":"3"
+        }
+    }    
+);
