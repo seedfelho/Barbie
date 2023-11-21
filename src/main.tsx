@@ -4,6 +4,7 @@ import * as ReactDOM from "react-dom/client";
 import Header from './componentes/header/Header'
 import Footer1 from './componentes/footer1/Footer1'
 import Main from './componentes/main/Main'
+import Contato from './componentes/contato/Contato';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -42,7 +43,7 @@ const router = createBrowserRouter([
     element: 
     <>
     <Header/>
-    <div className="content-main">Pagina Contato!</div>
+    <Contato/>
     <Footer1/>
     </>,
   },
